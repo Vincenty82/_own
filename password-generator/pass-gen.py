@@ -97,3 +97,16 @@ while main_loop_check:
         main_loop_check = False
     else:
         print(fg_color.red_0 + "\nChoose one of the available options." + formatting_reset)
+
+# import string
+# import random
+
+
+# def generate_password(length=10):
+#     alphabet = string.ascii_letters
+#     return "".join(
+#         random.choices(alphabet, k=length)
+#     )
+
+
+# print(generate_password(100))
