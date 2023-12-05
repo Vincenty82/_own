@@ -86,17 +86,18 @@ def password_length():                                                          
 
 #program
 
-print("\n" + bg_color.cyan_0 + "Welcome to the password generator. Choose what you would like to do next." + formatting_reset)
-while main_loop_check: 
-    main_menu_check = main_menu()
-    if main_menu_check == 1:
-        pswrd = generate_password(pswrd_len)
-    elif main_menu_check == 2:
-        pswrd_len = password_length()
-    elif main_menu_check == 3:
-        main_loop_check = False
-    else:
-        print(fg_color.red_0 + "\nChoose one of the available options." + formatting_reset)
+if __name__ == "__main__":
+    print("\n" + bg_color.cyan_0 + "Welcome to the password generator. Choose what you would like to do next." + formatting_reset)
+    while main_loop_check: 
+        main_menu_check = main_menu()
+        if main_menu_check == 1:
+            pswrd = generate_password(pswrd_len)
+        elif main_menu_check == 2:
+            pswrd_len = password_length()
+        elif main_menu_check == 3:
+            main_loop_check = False
+        else:
+            print(fg_color.red_0 + "\nChoose one of the available options." + formatting_reset)
 
 # import string
 # import random
